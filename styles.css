@@ -2,35 +2,81 @@
     margin: 0;
     padding: 0;
 }
-/* #landing{
+
+#landing{
+    position: relative; 
     margin: 0;
     padding: 0;
-    background-image: url('https://static.pexels.com/photos/355952/pexels-photo-355952.jpeg');
+    /* background-image: url('images/glasses.jpeg');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
-    opacity: 0.65;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align:center;
     align-items: center;
 }
-#landing-text{
-    color: rgb(214, 212, 238);
-    font-size : 30px;
-} */
-
-#landing {
-     position: relative; 
-     z-index: 2; 
-}
-#img {
+#landing::before{
+    content: "";
     position: absolute;
-    display: block;
-    z-index: 1;
+    z-index: -1;
     top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-    background: /* stuff */;
+    right: 0;
+    background-image: url('images/glasses.jpeg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+#landing h1{
+    font-size:70px;
+    font-family: 'Anton', sans-serif;
+    color:rgb(160, 20, 20);
+    letter-spacing: 10px;
+}
+#landing p{
+    font-size:70px;
+    font-family: 'Francois One', sans-serif;
+    color:yellow;
+    letter-spacing: 15px;
+}
+#landing h2{
+    padding: 20px;
+    font-size:70px;
+    font-family: 'Francois One', sans-serif;
+    color:rgb(229, 243, 222);
+    letter-spacing: 10px;
+    font-weight: 600px;
+}
+#nav{
+    height:50px;
+    position: fixed;
+    background-color :rgba(39, 36, 36,0.6);
+    z-index:1;
+    width: 100%;
+    display: inline-block;
+}
+#nav #first{
+    color:rgb(199, 199, 199);
+    font-size: 25px;
+    float: left;
+    padding: 5px
+}
+#nav #second{
+    float:right;
+}
+#nav li{
+    padding: 10px;
+    font-size: 20px;
+    float: right;
+    list-style-type: none;
+}
+#nav a{
+    text-decoration: none;
+}
+#nav a:hover{
+    color:white;
+
 }
