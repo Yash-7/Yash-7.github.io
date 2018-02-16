@@ -28,6 +28,7 @@
     background-image: url('images/glasses_new.jpeg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     opacity: 1;
 }
 #landing h1{
@@ -51,19 +52,18 @@
     font-weight: 600px;
 }
 #nav{
-    height:90px;
+    height:80px;
     position: fixed;
-    background-color :rgba(39, 36, 36,0.8);
+    background-color :rgba(39, 36, 36,0);
     z-index:1000;
     width: 100%;
     display: inline-block;
-    line-height: 80px;
     -webkit-transition: height .5s line-height .5s ;
     transition: height .5s line-height .5s ;
 }
 #nav #first{
     color:rgb(199, 199, 199);
-    font-size: 45px;
+    font-size: 40px;
     float: left;
     padding: 5px;
     -webkit-transition: all .5s;
@@ -74,7 +74,7 @@
 }
 #nav li{
     padding: 10px;
-    font-size: 32px;
+    font-size: 25px;
     float: right;
     list-style-type: none;
     -webkit-transition: all .5s;
@@ -84,22 +84,33 @@
 }
 #nav a{
     text-decoration: none;
+    color:rgb(170, 170, 170);
+    font-weight: 400;
 }
 #nav a:hover{
     color:white;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 .scrolled-nav {
-    line-height: 50px !important;
-    height: 55px !important;
-    background-color :rgb(192, 192, 192) !important;
+    height: 50px !important;
+    background-color :rgb(255, 255, 255) !important;
+    box-shadow: 0px 1px rgb(175, 175, 175) !important;
 }
 .scrolled-nav #first{
-    color:rgb(54, 50, 50) !important;
-    font-size: 25px !important;
+    color:rgb(255, 184, 51) !important;
+    font-weight: 500 !important;
+    font-size: 28px !important;
 }
 .scrolled-nav li{
-    color:rgb(54, 50, 50) !important;
-    font-size: 22px !important;
+    font-size: 20px !important;
+}
+.scrolled-nav a{
+    color:rgb(49, 46, 46) !important;
+    font-weight: 600 !important;
+}
+.scrolled-nav a:hover{
+    color:rgb(255, 184, 51) !important;
 }
 .counter {
     width: 20px;
@@ -110,4 +121,18 @@
     top: 120px;
     right: 0;
   }
-  
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+
+.section-about{
+    background-color:rgb(241, 128, 23);
+}
+.section-about h2{
+    color: white;
+}
+.section-about p{
+    color: whitesmoke;
+    font-size: 17px
+}
