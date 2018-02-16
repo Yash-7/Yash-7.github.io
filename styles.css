@@ -25,13 +25,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('images/glasses.jpeg');
+    background-image: url('images/glasses_new.jpeg');
     background-position: center;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 1;
 }
 #landing h1{
-    font-size:70px;
+    font-size:80px;
     font-family: 'Anton', sans-serif;
     color:rgb(160, 20, 20);
     letter-spacing: 10px;
@@ -39,44 +39,75 @@
 #landing p{
     font-size:70px;
     font-family: 'Francois One', sans-serif;
-    color:yellow;
+    color:orange;
     letter-spacing: 15px;
 }
 #landing h2{
-    padding: 20px;
-    font-size:70px;
+    padding: 40px;
+    font-size:80px;
     font-family: 'Francois One', sans-serif;
     color:rgb(229, 243, 222);
     letter-spacing: 10px;
     font-weight: 600px;
 }
 #nav{
-    height:50px;
+    height:90px;
     position: fixed;
-    background-color :rgba(39, 36, 36,0.6);
-    z-index:1;
+    background-color :rgba(39, 36, 36,0.8);
+    z-index:1000;
     width: 100%;
     display: inline-block;
+    line-height: 80px;
+    -webkit-transition: height .5s line-height .5s ;
+    transition: height .5s line-height .5s ;
 }
 #nav #first{
     color:rgb(199, 199, 199);
-    font-size: 25px;
+    font-size: 45px;
     float: left;
-    padding: 5px
+    padding: 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 #nav #second{
     float:right;
 }
 #nav li{
     padding: 10px;
-    font-size: 20px;
+    font-size: 32px;
     float: right;
     list-style-type: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    color:rgb(80, 80, 80);
+    font-weight: 400;
 }
 #nav a{
     text-decoration: none;
 }
 #nav a:hover{
     color:white;
-
 }
+.scrolled-nav {
+    line-height: 50px !important;
+    height: 55px !important;
+    background-color :rgb(192, 192, 192) !important;
+}
+.scrolled-nav #first{
+    color:rgb(54, 50, 50) !important;
+    font-size: 25px !important;
+}
+.scrolled-nav li{
+    color:rgb(54, 50, 50) !important;
+    font-size: 22px !important;
+}
+.counter {
+    width: 20px;
+    height: 20px;
+    background: black;
+    color: #fff;
+    position: fixed;
+    top: 120px;
+    right: 0;
+  }
+  
