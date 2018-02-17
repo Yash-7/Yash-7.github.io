@@ -79,13 +79,11 @@
     list-style-type: none;
     -webkit-transition: all .5s;
     transition: all .5s;
-    color:rgb(80, 80, 80);
-    font-weight: 400;
 }
 #nav a{
     text-decoration: none;
     color:rgb(170, 170, 170);
-    font-weight: 400;
+    font-weight: 500;
 }
 #nav a:hover{
     color:white;
@@ -135,4 +133,25 @@
 .section-about p{
     color: whitesmoke;
     font-size: 17px
+}
+i{
+    position: fixed;
+    z-index: 20;
+    cursor: pointer;
+}
+#git{
+    left:1.5%;
+    bottom:2%;
+}
+#fb{
+    left:4%;
+    bottom:2%;
+}
+#ig{
+    left:6.5%;
+    bottom:2%;
+}
+#lin{
+    left:9%;
+    bottom:2%;
 }
