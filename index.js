@@ -15,7 +15,6 @@ var animationEnd = (function(el) {
 
 var animation='wobble';
 var classChange= function(id){
-    $('i').css({"animation-delay":0,"-webkit-animation-delay":0})
     $("#"+id).removeClass('animated bounce')
     $("#"+id).addClass('animated '+animation).one(animationEnd, function(){
         $("#"+id).removeClass('animated '+animation)
