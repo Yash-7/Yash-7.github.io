@@ -138,6 +138,8 @@ i{
     position: fixed;
     z-index: 20;
     cursor: pointer;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 #git{
     left:1.5%;
