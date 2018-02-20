@@ -34,22 +34,36 @@
                     $('#nav').removeClass('scrolled-nav');
                 } 
             
-            }); 
+            });
+            var scrollFunction=function(e,num){
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $(e.target.attributes.href.value).offset().top
+                }, num);
+            }
+            $("#abtbtn").click(function(e) {
+                scrollFunction(e,1000);
+            });
+            $("#intbtn").click(function(e) {
+                scrollFunction(e,1200);
+            });
         });
+        console.log(navigator.userAgent)
+        
     </script>
 </head>
 <body>
-    <i id="git"class="fa fa-github animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
-    <i id="fb"class="fa fa-facebook-square animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
-    <i id="ig"class="fa fa-instagram animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
-    <i id="lin"class="fa fa-linkedin-square animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
+    <i id="git" class="fa fa-github animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
+    <i id="fb" class="fa fa-facebook-square animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
+    <i id="ig" class="fa fa-instagram animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
+    <i id="lin" class="fa fa-linkedin-square animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
     <div id="nav">
         <div id="first">My Portfolio</div>
         <div id="second">
             <ul>
                 <li><a href="#">SKILLS</a></li>
-                <li><a href="#">INTERESTS</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a id="intbtn" href="#interests">INTERESTS</a></li>
+                <li><a id="abtbtn" href="#about">ABOUT</a></li>
             </ul>
         </div>
     </div>  
@@ -58,19 +72,31 @@
         <h1>NEITHER A NERD. NOR A GEEK.</h1>
         <p>JUST A CASUAL GUY!</p>
     </div>
-    <section class="section section-about">
+    <section id="about" class="section section-about">
         <h2>ABOUT</h2>
         <hr style="margin-left:40%;height:3px;width:20%;border:none;color:white;background-color:white;" />
         <p style="padding:30px">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
         </p>
     </section>
-    <section class="section section-none">
-            <h2>ABOUT</h2>
+    <section id="interests" class="section section-none">
+            <h2>INTERESTS</h2>
             <hr style="margin-left:40%;height:3px;width:20%;border:none;color:white;background-color:white;" />
             <p style="padding:30px">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
             </p>
         </section>
+        
+        <script>
+            if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/15\./)) {
+                console.log('abcd')
+                document.body.addEventListener("mousewheel", function() {
+                    event.preventDefault();
+                    var wd = event.wheelDelta;
+                    var csp = window.pageYOffset;
+                    window.scrollTo(0, csp - wd);
+                });
+            }
+        </script>
 </body>
 </html>
