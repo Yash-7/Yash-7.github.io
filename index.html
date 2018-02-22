@@ -19,7 +19,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -48,9 +47,8 @@
                 scrollFunction(e,1200);
             });
         });
-        console.log(navigator.userAgent)
-        
     </script>
+    <script src="./index.js" async></script>
 </head>
 <body>
     <i id="git" class="fa fa-github animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
@@ -74,28 +72,35 @@
     </div>
     <section id="about" class="section section-about">
         <h2>ABOUT</h2>
-        <hr style="margin-left:40%;height:3px;width:20%;border:none;color:white;background-color:white;" />
+        <hr class="hr" style="height:3px;width:20%;border:none;color:white;background-color:white;" />
         <p style="padding:30px">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
         </p>
     </section>
     <section id="interests" class="section section-none">
             <h2>INTERESTS</h2>
-            <hr style="margin-left:40%;height:3px;width:20%;border:none;color:white;background-color:white;" />
+            <hr class="hr" style="height:3px;width:20%;border:none;color:black;background-color:black;" />
             <p style="padding:30px">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
             </p>
         </section>
         
         <script>
+            var hr=document.getElementsByClassName('hr');
             if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/15\./)) {
-                console.log('abcd')
+                for(var i=0;i<hr.length;i++){
+                    hr[i].style.marginLeft=0;
+                }    
                 document.body.addEventListener("mousewheel", function() {
                     event.preventDefault();
                     var wd = event.wheelDelta;
                     var csp = window.pageYOffset;
                     window.scrollTo(0, csp - wd);
                 });
+            } else {
+                for(var i=0;i<hr.length;i++){
+                    hr[i].style.marginLeft="40%";
+                }
             }
         </script>
 </body>

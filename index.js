@@ -36,7 +36,7 @@ $(document).ready(function(){
         classChange('fb');
     });
     $("#ig").click(function(){
-        window.open('https://www.instagram.com/yashwanth.7/saved/?hl=en', '_blank')
+        window.open('https://www.instagram.com/yashwanth.7/?hl=en', '_blank')
         return false;
     });
     $("#ig").hover(function(){
