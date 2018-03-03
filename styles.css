@@ -169,7 +169,7 @@ i{
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    opacity: 0.8;
+    opacity: 1;
     min-height: 100vh;
 }
 .anime_text{
