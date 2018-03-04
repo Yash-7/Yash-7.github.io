@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -97,16 +98,35 @@
         </p>
     </section>
     <section id="contact">
-        <div id="dp">
-            <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" alt="Image" height="300px" width="300px" style="border-radius:30%">
-            <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
-            <h4>IITM UnderGrad</h4>
-        </div>
+        
         <div id="msg">
+            <h1>Leave a message</h1>
+            <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
+            <br>
+            <form action="index.php" method="post">
+                <h4><label for="fname">Name</label></h4>
+                <input type="text" id="fname" name="name" placeholder="Your name"> <br><br>
+                <h4><label for="subject">Subject</label></h4>
+                <textarea id="subject" rows="4" name="subject" placeholder="Write something.." ></textarea> <br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div id="dp">
+                <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" alt="Image" height="300px" width="300px" style="border-radius:30%">
+                <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
+                <h4>IITM UnderGrad</h4>
+            </div>
+        <div id="phone">
+            <h1>Get in touch</h1>
+            <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
+            <br><br>
+            <h4><p class="fa fa-phone" style="color:#C63D0F"></p> +91 8978108107</h4>
+            <h4><p class="fa fa-envelope" style="color:#C63D0F"></p>&nbsp;  yashwanthnaik10@gmail.com</h4>
+            <h4><p class="fa fa-map-marker" style="color:#C63D0F"></p>&nbsp;  Room No. 2014, Narmada Hostel, IIT Madras, Chennai, India.</h4>
         </div>
     </section>    
     <section id="footer" style="text-align:center">
-        Designed and developed with <span><p class="fa fa-heart" style="color:black"></p></span>
+        Designed and developed with <span><p class="fa fa-heart" style="color:rgb(31, 31, 31)"></p></span>
     </section>
     <script>
         var hr=document.getElementsByClassName('hr');
