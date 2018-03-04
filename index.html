@@ -47,6 +47,9 @@
             $("#intbtn").click(function(e) {
                 scrollFunction(e,1200);
             });
+            $("#contbtn").click(function(e) {
+                scrollFunction(e,1600);
+            });
         });
     </script>
     <script src="./index.js" async></script>
@@ -60,6 +63,7 @@
         <div id="first">My Portfolio</div>
         <div id="second">
             <ul>
+                <li><a id="contbtn" href="#contact">CONTACT</a></li>
                 <li><a href="#">SKILLS</a></li>
                 <li><a id="intbtn" href="#interests">INTERESTS</a></li>
                 <li><a id="abtbtn" href="#about">ABOUT</a></li>
@@ -92,24 +96,35 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
         </p>
     </section>
-        
-        <script>
-            var hr=document.getElementsByClassName('hr');
-            if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/15\./)) {
-                for(var i=0;i<hr.length;i++){
-                    hr[i].style.marginLeft=0;
-                }    
-                document.body.addEventListener("mousewheel", function() {
-                    event.preventDefault();
-                    var wd = event.wheelDelta;
-                    var csp = window.pageYOffset;
-                    window.scrollTo(0, csp - wd);
-                });
-            } else {
-                for(var i=0;i<hr.length;i++){
-                    hr[i].style.marginLeft="40%";
-                }
+    <section id="contact">
+        <div id="dp">
+            <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" alt="Image" height="300px" width="300px" style="border-radius:30%">
+            <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
+            <h4>IITM UnderGrad</h4>
+        </div>
+        <div id="msg">
+        </div>
+    </section>    
+    <section id="footer" style="text-align:center">
+        Designed and developed with <span><p class="fa fa-heart" style="color:black"></p></span>
+    </section>
+    <script>
+        var hr=document.getElementsByClassName('hr');
+        if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/15\./)) {
+            for(var i=0;i<hr.length;i++){
+                hr[i].style.marginLeft=0;
+            }    
+            document.body.addEventListener("mousewheel", function() {
+                event.preventDefault();
+                var wd = event.wheelDelta;
+                var csp = window.pageYOffset;
+                window.scrollTo(0, csp - wd);
+            });
+        } else {
+            for(var i=0;i<hr.length;i++){
+                hr[i].style.marginLeft="40%";
             }
-        </script>
+        }
+    </script>
 </body>
 </html>

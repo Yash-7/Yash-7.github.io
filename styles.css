@@ -7,9 +7,6 @@
     position: relative; 
     margin: 0;
     padding: 0;
-    /* background-image: url('images/glasses.jpeg');
-    background-position: center;
-    background-size: cover; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -174,7 +171,7 @@ i{
 }
 .anime_text{
     position: absolute;
-    top:50%;
+    top:45%;
     width:100%;
     text-align:center;
     color:rgb(255, 255, 255);
@@ -183,4 +180,40 @@ i{
     text-transform:uppercase;
     font-weight: 600;
     font-family: 'Nanum Brush Script', cursive;
+}
+#contact{
+    display: block;
+    position: relative;
+}
+#dp{
+    float: left;
+    min-height: 70vh;
+    width: 35%;
+    text-align: center;
+    background-color: #E44424;
+    font-family: 'Fjalla One', sans-serif;
+    color: #2B2B2B;
+    letter-spacing: 1px;
+}
+#dp img{
+    margin-left: auto;
+	margin-right: auto;
+    /* display: block; */
+    margin-top: 12%;
+    /* border: 5px solid #404040; */
+}
+#msg{
+    float: right;
+    background: url('images/contact.jpeg');
+    background-size:cover;
+    min-height: 70vh;
+    width: 65%;
+    opacity: 0.9;
+}
+#footer{
+    background-color: #B71427;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 1px;
 }
