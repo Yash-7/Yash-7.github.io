@@ -21,6 +21,7 @@ var classChange= function(id){
     });
 }
 $(document).ready(function(){
+    console.log('inside');
     $("#git").click(function(){
         window.open('https://github.com/Yash-7', '_blank')
         return false;
