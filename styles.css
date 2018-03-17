@@ -262,3 +262,21 @@ input[type=submit]:hover {
     font-family: 'Lobster', sans-serif;
     letter-spacing: 1px;
 }
+#cric{
+    background: url('http://www.theshillongtimes.com/wp-content/uploads/2017/04/B-K-Bajoria-K-V-Happy-Valley-win-in-inter-school-cricket.jpg');
+    background-size: cover;
+    -webkit-transition:0.5s; 
+    transition: 0.5s;
+}
+#sk{
+    background: url('https://sketchingnow.com/wp-content/uploads/2017/03/700sq-Values-Buildings.jpg');
+    background-size: cover;
+    -webkit-transition:0.5s; 
+    transition: 0.5s;
+}
+#vb{
+    background: url('http://fijione.tv/wp-content/uploads/2017/08/bigstock-Beach-Volleyball-Silhouette-81799844_1.jpg');
+    background-size: cover;
+    -webkit-transition:0.5s; 
+    transition: 0.5s;
+}

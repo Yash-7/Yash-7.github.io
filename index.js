@@ -21,7 +21,6 @@ var classChange= function(id){
     });
 }
 $(document).ready(function(){
-    console.log('inside');
     $("#git").click(function(){
         window.open('https://github.com/Yash-7', '_blank')
         return false;
@@ -50,5 +49,21 @@ $(document).ready(function(){
     $("#lin").hover(function(){
         classChange('lin');
     });
+
+    $('#cric').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    })
+    $('#sk').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    });
+    $('#vb').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    })
 });
 
