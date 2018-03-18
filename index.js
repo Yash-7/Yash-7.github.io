@@ -20,6 +20,32 @@ var classChange= function(id){
         $("#"+id).removeClass('animated '+animation)
     });
 }
+var resize=function(){
+    if($(window).width()<340){
+        $('#fb').css('margin-left','8%');
+        $('#ig').css('margin-left','16%');
+        $('#lin').css('margin-left','24%');
+    }else if($(window).width()<470){
+        $('#fb').css('margin-left','6%');
+        $('#ig').css('margin-left','12%');
+        $('#lin').css('margin-left','18%');
+    }
+    else if($(window).width()<570){
+        $('#fb').css('margin-left','4%');
+        $('#ig').css('margin-left','8%');
+        $('#lin').css('margin-left','12%');
+    }else if($(window).width()<840){
+        $('#fb').css('margin-left','3%');
+        $('#ig').css('margin-left','6%');
+        $('#lin').css('margin-left','9%');
+    }else if($(window).width()<1200){
+        $('#fb').css('margin-left','1%');
+        $('#ig').css('margin-left','2%');
+        $('#lin').css('margin-left','3%');
+    }else{
+        $('#fb,#ig,#lin').css('margin-left','0')
+    }
+}
 $(document).ready(function(){
     $("#git").click(function(){
         window.open('https://github.com/Yash-7', '_blank')
@@ -65,24 +91,11 @@ $(document).ready(function(){
     },function(){
         this.style.opacity="1";
     })
-    console.log($(window).width());
-    if($(window).width()<470){
-        $('#fb').css('margin-left','6%');
-        $('#ig').css('margin-left','12%');
-        $('#lin').css('margin-left','18%');
-    }
-    else if($(window).width()<570){
-        $('#fb').css('margin-left','4%');
-        $('#ig').css('margin-left','8%');
-        $('#lin').css('margin-left','12%');
-    }else if($(window).width()<840){
-        $('#fb').css('margin-left','3%');
-        $('#ig').css('margin-left','6%');
-        $('#lin').css('margin-left','9%');
-    }else if($(window).width()<1200){
-        $('#fb').css('margin-left','1%');
-        $('#ig').css('margin-left','2%');
-        $('#lin').css('margin-left','3%');
-    }
+    resize();
+    $(window).resize(function(){
+        console.log($(window).width());
+        resize();  
+    })
+    
 });
 
