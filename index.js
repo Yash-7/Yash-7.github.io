@@ -93,7 +93,6 @@ $(document).ready(function(){
     })
     resize();
     $(window).resize(function(){
-        console.log($(window).width());
         resize();  
     })
     
