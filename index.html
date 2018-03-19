@@ -50,6 +50,14 @@
                 scrollFunction(e,1600);
             });
         });
+        var nav=function(){
+            var x = document.getElementById("nav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
     <script src="./index.js" async></script>
 </head>
@@ -60,7 +68,7 @@
         <i id="ig" class="fa fa-instagram animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
         <i id="lin" class="fa fa-linkedin-square animated bounce" style="font-size:32px;color:rgb(190, 190, 190)"></i>
     </div>
-    <div id="nav">
+    <div id="nav" class="topnav">
         <div id="first">My Portfolio</div>
         <div id="second">
             <ul>
@@ -98,16 +106,16 @@
         </p>
         <div class="container-fluid" style="margin:0">
                 <div class="row">
-                    <div id="cric" class="col-md-4" style="height:40vh"></div>
-                    <div id="sk"class="col-md-4" style="height:40vh"></div>
-                    <div id="vb"class="col-md-4" style="height:40vh"></div>
+                    <div id="cric" class="col-lg-4" style="height:40vh"></div>
+                    <div id="sk"class="col-lg-4" style="height:40vh"></div>
+                    <div id="vb"class="col-lg-4" style="height:40vh"></div>
                 </div>
             </div>
     </section>
     
     <div class="container-fluid" id="contact">
         <div class="row">
-            <div id="msg" class="col-md-4">
+            <div id="msg" class="col-lg-4">
                 <h1>Leave a message</h1>
                 <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
                 <br>
@@ -119,12 +127,12 @@
                     <input type="submit" value="Send"id="send_mail"> 
                 </form>
             </div>
-            <div id="dp" class="col-md-4">
-                <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" alt="Image" height="300px" width="300px" style="border-radius:30%">
+            <div id="dp" class="col-lg-4">
+                <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" id="dpimg" alt="Image" height="300px" width="300px" style="border-radius:30%">
                 <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
                 <h4>IITM UnderGrad</h4>
             </div>
-            <div id="phone" class="col-md-4"> 
+            <div id="phone" class="col-lg-4"> 
                 <h1>Get in touch</h1>
                 <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
                 <br><br>

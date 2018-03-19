@@ -111,6 +111,9 @@
 .scrolled-nav a:hover{
     color:rgb(255, 184, 51) !important;
 }
+@media screen and (max-width: 700px) {
+    .topnav li {display: none;}
+}
 
 .section{
     text-align:center;

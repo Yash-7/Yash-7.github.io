@@ -45,6 +45,27 @@ var resize=function(){
     }else{
         $('#fb,#ig,#lin').css('margin-left','0')
     }
+    if($(window).width()<550){
+        if($(window).height()<710){
+            $('#dp,#phone,#msg').css('height','80vh')
+        } else {
+            $('#dp,#phone,#msg').css('height','70vh')            
+        }
+    } else {
+        $('#dp,#phone,#msg').css('height','70vh')            
+    }
+    if($(window).width()<350){
+        $('#dpimg').height(230);
+        $('#dpimg').width(230);
+        $('#dpimg').css('margin-top','25%')
+    }else{
+        $('#dpimg').height(300);
+        $('#dpimg').width(300);
+        $('#dpimg').css('margin-top','15%')
+    }
+    if($(window).width()<700){
+        $('.icon').css('display','block')
+    }
 }
 $(document).ready(function(){
     $("#git").click(function(){
