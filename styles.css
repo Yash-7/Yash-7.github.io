@@ -255,6 +255,9 @@ input[type=submit]:hover {
     font-family: 'Lobster', sans-serif;
     letter-spacing: 1px;
 }
+#interests{
+    background-color: whitesmoke;
+}
 #cric{
     background: url('https://www.talkinglifestyle.com.au/wp-content/uploads/sites/17/2017/11/cricket.jpg');
     background-size: cover;
@@ -269,6 +272,24 @@ input[type=submit]:hover {
 }
 #vb{
     background: url('http://fijione.tv/wp-content/uploads/2017/08/bigstock-Beach-Volleyball-Silhouette-81799844_1.jpg');
+    background-size: cover;
+    -webkit-transition:0.5s; 
+    transition: 0.5s;
+}
+#game{
+    background: url('images/gaming.jpeg');
+    background-size: cover;
+    -webkit-transition:opacity 0.5s; 
+    transition: opacity 0.5s;
+}
+#webop{
+    background: url('https://hdqwalls.com/download/web-development-minimalism-bl-2048x1152.jpg');
+    background-size: cover;
+    -webkit-transition:0.5s; 
+    transition: 0.5s;
+}
+#ml{
+    background: url('http://cdn.wittysparks.com/wp-content/uploads/2017/08/09210754/Machine-Learning.jpg');
     background-size: cover;
     -webkit-transition:0.5s; 
     transition: 0.5s;

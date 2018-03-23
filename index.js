@@ -112,6 +112,21 @@ $(document).ready(function(){
     },function(){
         this.style.opacity="1";
     })
+    $('#game').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    })
+    $('#webop').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    })
+    $('#ml').hover(function(){
+        this.style.opacity="0.7";
+    },function(){
+        this.style.opacity="1";
+    })
     resize();
     $(window).resize(function(){
         resize();  
