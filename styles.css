@@ -22,7 +22,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('images/glasses_new.jpeg');
+    background-image: url('images/landing3.jpeg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -31,20 +31,20 @@
 #landing h1{
     font-size:5.2vw;
     font-family: 'Anton', sans-serif;
-    color:rgb(160, 20, 20);
+    color:rgb(51, 51, 51);
     letter-spacing: 0.75vw;
 }
 #landing p{
     font-size:4.8vw;
     font-family: 'Francois One', sans-serif;
-    color:orange;
+    color:rgb(51, 51, 51);
     letter-spacing: 0.9vw;
 }
 #landing h2{
     padding: 2.5vw;
     font-size:5.1vw;
     font-family: 'Francois One', sans-serif;
-    color:rgb(229, 243, 222);
+    color:rgb(3, 3, 3);
     letter-spacing: 0.75vw;
     font-weight: 500;
 }
@@ -59,7 +59,7 @@
     transition: height .5s line-height .5s ;
 }
 #nav #first{
-    color:rgb(199, 199, 199);
+    color:rgb(204, 166, 131);
     font-size: 40px;
     float: left;
     padding: 5px;
@@ -81,12 +81,12 @@
 }
 #nav a{
     text-decoration: none;
-    color:rgb(170, 170, 170);
+    color:rgb(255, 255, 255);
     font-weight: 500;
     font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
 }
 #nav a:hover{
-    color:white;
+    color:rgb(235, 235, 235);
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -121,7 +121,7 @@
 }
 
 .section-about{
-    background-color:rgb(241, 128, 23);
+    background-color:#E44424;
 }
 .section-about h2{
     color: white;
