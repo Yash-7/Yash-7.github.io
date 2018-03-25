@@ -81,12 +81,12 @@
 }
 #nav a{
     text-decoration: none;
-    color:rgb(255, 255, 255);
-    font-weight: 500;
+    color:rgb(39, 39, 39);
+    font-weight: 600;
     font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
 }
 #nav a:hover{
-    color:rgb(235, 235, 235);
+    color:rgb(209, 209, 209);
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -115,19 +115,14 @@
     .topnav li {display: none;}
 }
 
-.section{
+#about{
     text-align:center;
-    padding:3vw 5vw;
 }
-
-.section-about{
-    background-color:#E44424;
+#about h2{
+    color: rgb(24, 24, 24);
 }
-.section-about h2{
-    color: white;
-}
-.section-about p{
-    color: whitesmoke;
+#about p{
+    color: rgb(0, 0, 0);
     font-size: 17px
 }
 i{
@@ -256,7 +251,9 @@ input[type=submit]:hover {
     letter-spacing: 1px;
 }
 #interests{
-    background-color: whitesmoke;
+    background-color: #EAE3EA;
+    text-align:center;
+    padding: 3vw 5vw;
 }
 #cric{
     background: url('https://www.talkinglifestyle.com.au/wp-content/uploads/sites/17/2017/11/cricket.jpg');

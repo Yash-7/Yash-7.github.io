@@ -133,4 +133,8 @@ $(document).ready(function(){
     })
     
 });
-
+var index=0;
+window.onload=function(){
+    index+=1;
+    console.log(index);
+}
