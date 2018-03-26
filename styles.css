@@ -29,15 +29,15 @@
     opacity: 1;
 }
 #landing h1{
-    font-size:5.2vw;
+    font-size:4.2vw;
     font-family: 'Anton', sans-serif;
     color:rgb(51, 51, 51);
-    letter-spacing: 0.75vw;
+    letter-spacing: 0.50vw;
 }
-#landing p{
+#landing span{
     font-size:4.8vw;
     font-family: 'Francois One', sans-serif;
-    color:rgb(51, 51, 51);
+    color:rgb(34, 34, 34);
     letter-spacing: 0.9vw;
 }
 #landing h2{
@@ -105,11 +105,11 @@
     font-size: 20px !important;
 }
 .scrolled-nav a{
-    color:rgb(49, 46, 46) !important;
+    color:rgb(255, 184, 51) !important;
     font-weight: 600 !important;
 }
 .scrolled-nav a:hover{
-    color:rgb(255, 184, 51) !important;
+    color:rgb(49, 46, 46) !important;
 }
 @media screen and (max-width: 700px) {
     .topnav li {display: none;}

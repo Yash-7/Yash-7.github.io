@@ -131,10 +131,10 @@ $(document).ready(function(){
     $(window).resize(function(){
         resize();  
     })
-    
+    $("#gotoabt").hover(function(){
+        $("#gotoabt").addClass('animated fadeOutDown').one(animationEnd, function(){
+            $("#gotoabt").removeClass('animated fadeOutDown')
+        });
+    })
 });
-var index=0;
-window.onload=function(){
-    index+=1;
-    console.log(index);
-}
+
