@@ -137,4 +137,41 @@ $(document).ready(function(){
         });
     })
 });
-
+$(document).ready(function(){
+    var scrollTop = 0;
+    $(window).scroll(function(){
+        scrollTop = $(window).scrollTop();
+        if (scrollTop >= 150) {
+            $('#nav').addClass('scrolled-nav');
+        } else if (scrollTop < 150) {
+            $('#nav').removeClass('scrolled-nav');
+        } 
+    
+    });
+    var scrollFunction=function(e,num){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(e.target.attributes.href.value).offset().top
+        }, num);
+    }
+    $("#abtbtn").click(function(e) {
+        scrollFunction(e,1000);
+    });
+    $("#intbtn").click(function(e) {
+        scrollFunction(e,1200);
+    });
+    $("#contbtn").click(function(e) {
+        scrollFunction(e,1600);
+    });
+    $("#gotoabt").click(function(e){
+        scrollFunction(e,700);
+    })
+});
+var nav=function(){
+    var x = document.getElementById("nav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

@@ -291,3 +291,17 @@ input[type=submit]:hover {
     -webkit-transition:0.5s; 
     transition: 0.5s;
 }
+#skills{
+    padding: 3vw 5vw;
+    text-align: center; 
+}
+.skillClass{
+    float: left;
+}
+#skills p{
+    font-size: 22px;
+    font-family: 'Roboto Condensed',sans-serif;
+    padding-top: 10px;
+    color: #525252;
+    font-weight: 600;
+}

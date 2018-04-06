@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,44 +24,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-            var scrollTop = 0;
-            $(window).scroll(function(){
-                scrollTop = $(window).scrollTop();
-                if (scrollTop >= 150) {
-                    $('#nav').addClass('scrolled-nav');
-                } else if (scrollTop < 150) {
-                    $('#nav').removeClass('scrolled-nav');
-                } 
-            
-            });
-            var scrollFunction=function(e,num){
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $(e.target.attributes.href.value).offset().top
-                }, num);
-            }
-            $("#abtbtn").click(function(e) {
-                scrollFunction(e,1000);
-            });
-            $("#intbtn").click(function(e) {
-                scrollFunction(e,1200);
-            });
-            $("#contbtn").click(function(e) {
-                scrollFunction(e,1600);
-            });
-            $("#gotoabt").click(function(e){
-                scrollFunction(e,700);
-            })
-        });
-        var nav=function(){
-            var x = document.getElementById("nav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+        
     </script>
     <script src="./index.js" async></script>
 </head>
@@ -125,7 +89,83 @@
             </div>
         </div>
     </section>
-    
+    <div id="skills" class="container-fluid">
+        <h2>SKILLS</h2>
+        <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;"/>
+        <br>
+        <br>
+        <div class="row" >
+            <div class="col-lg-8" style="background-color:rgb(250,250,250);padding-top:40px">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="./images/html.png"height="150px"width="150px" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://vignette.wikia.nocookie.net/shararam-smeshi/images/1/1c/CSS.png/revision/latest?cb=20161102175256&path-prefix=ru" height="150px"width="150px"alt="">
+                                <p>CSS</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67"height="150px"width="150px" alt="">
+                                <p>ExpressJS</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png" height="150px"width="150px"alt="">
+                                <p>Python</p>
+                            </div>
+                        </div>
+                        
+                        <!-- node html css js python php react webchat -->
+                        <!-- express mongo webrtc bootstrap -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"height="150px"width="150px" alt="">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="http://www.topcode.io/wp-content/uploads/nodejs-square-200.png" height="150px"width="150px"alt="">
+                                <p>NodeJS</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png"height="150px"width="150px" alt="">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://blog.nerion.es/wp-content/uploads/2015/09/php.png" height="150px"width="200px"alt="">
+                                <p>PHP</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="background-color:rgb(245,245,245);padding:40px">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png"height="150px"width="150px" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="https://cms-assets.tutsplus.com/uploads/users/1116/posts/24835/preview_image/mongodb-logo.png" height="150px"width="200px"alt="">
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/2000px-Tensorflow_logo.svg.png"height="150px"width="150px" alt="">
+                        <p>Tensorflow</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="https://1777161849.rsc.cdn77.org/wp-content/uploads/2017/07/webrtc-1.png" height="150px"width="150px"alt="">
+                        <p>WebRTC</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" id="contact">
         <div class="row">
             <div id="msg" class="col-lg-4">
