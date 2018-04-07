@@ -163,6 +163,9 @@ $(document).ready(function(){
     $("#contbtn").click(function(e) {
         scrollFunction(e,1600);
     });
+    $("#skillbtn").click(function(e) {
+        scrollFunction(e,1600);
+    });
     $("#gotoabt").click(function(e){
         scrollFunction(e,700);
     })
