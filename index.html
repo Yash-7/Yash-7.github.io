@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script>
         
     </script>
@@ -76,9 +78,7 @@
     <section id="interests" class="section section-none">
         <h2>INTERESTS</h2>
         <hr class="hr" style="height:3px;width:20%;border:none;color:black;background-color:black;" />
-        <p style="padding:30px">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
-        </p>
+        <br><br>
         <div class="container-fluid" style="margin:0">
             <div class="row">
                 <div class="col-lg-4" id="webop" style="height:40vh" title="Web development"></div>
@@ -168,29 +168,36 @@
     <div class="container-fluid" id="contact">
         <div class="row">
             <div id="msg" class="col-lg-4">
-                <h1>Leave a message</h1>
-                <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
-                <br>
-                <form action="mailto:yashwanthnaik10@gmail.com?subject=Message from your github website" method="post" enctype="text/plain">
-                    <h4><label for="name">Name</label></h4>
-                    <input type="text" id="name" name="name" placeholder="Your name"> <br>
-                    <h4><label for="subject">Your message</label></h4>
-                    <textarea id="subject" rows="3" name="subject" placeholder="Write something.." ></textarea> <br><br>
-                    <input type="submit" value="Send"id="send_mail"> 
-                </form>
+                <div>
+                    <h1>Leave a message</h1>
+                    <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
+                    <br>
+                    <form action="mailto:yashwanthnaik10@gmail.com?subject=Message from your github website" method="post" enctype="text/plain">
+                        <h4><label for="name">Name</label></h4>
+                        <input type="text" id="name" name="name" placeholder="Your name"> <br>
+                        <h4><label for="subject">Your message</label></h4>
+                        <textarea id="subject" rows="3" name="subject" placeholder="Write something.." ></textarea> <br><br>
+                        <input type="submit" value="Send"id="send_mail"> 
+                    </form> 
+                </div>
             </div>
             <div id="dp" class="col-lg-4">
-                <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" id="dpimg" alt="Image" height="300px" width="300px" style="border-radius:30%">
-                <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
-                <h4>IITM UnderGrad</h4>
+                <div>
+                    <img src="https://avatars0.githubusercontent.com/u/26803022?v=4" id="dpimg" alt="Image" height="300px" width="300px" style="border-radius:30%">
+                    <h2 style="margin-top:35px;padding:5px">Yashwanth Naik</h2>
+                    <h4>IITM UnderGrad</h4>
+                </div>
+                
             </div>
             <div id="phone" class="col-lg-4"> 
-                <h1>Get in touch</h1>
-                <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
-                <br><br>
-                <h4><p class="fa fa-phone" style="color:#C63D0F"></p> +91 8978108107</h4>
-                <h4><p class="fa fa-envelope" style="color:#C63D0F"></p>&nbsp;  yashwanthnaik10@gmail.com</h4>
-                <h4><p class="fa fa-map-marker" style="color:#C63D0F"></p>&nbsp;  Room No. 2014, Narmada Hostel, IIT Madras, Chennai, India.</h4>
+                <div>
+                    <h1>Get in touch</h1>
+                    <hr class="hr" style="height:3px;width:20%;border:none;color:#E44424;background-color:#E44424;" />
+                    <br><br>
+                    <h4><p class="fa fa-phone" style="color:#C63D0F"></p> +91 8978108107</h4>
+                    <h4><p class="fa fa-envelope" style="color:#C63D0F"></p>&nbsp;  yashwanthnaik10@gmail.com</h4>
+                    <h4><p class="fa fa-map-marker" style="color:#C63D0F"></p>&nbsp;  Room No. 2014, Narmada Hostel, IIT Madras, Chennai, India.</h4>
+                </div>
             </div>
         </div>
     </div>    
@@ -215,6 +222,63 @@
             }
         }
         
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr=ScrollReveal();
+        sr.reveal('.topnav',{
+            duration:2000,
+            origin:'bottom'
+        });
+        sr.reveal('#about h2',{
+            duration:1500,
+            origin:'left',
+            distance:'50px'
+        })
+        sr.reveal('#about p',{
+            duration:1500,
+            origin:'right',
+            distance:'50px'
+        })
+        sr.reveal('#webop',{
+            duration:1500,
+            origin:'left'
+        })
+        sr.reveal('#cric',{
+            duration:1500,
+            origin:'left'
+        })
+        sr.reveal('#ml',{
+            duration:1500,
+            origin:'right'
+        })
+        sr.reveal('#vb',{
+            duration:1500,
+            origin:'right'
+        })
+        sr.reveal('#game',{
+            duration:1500
+        })
+        sr.reveal('#sk',{
+            duration:1500
+        })
+        sr.reveal('#skills',{
+            duration:2000
+        })
+        sr.reveal('#msg div',{
+            duration:1500,
+            origin:'left'
+        })
+        sr.reveal('#phone div',{
+            duration:1500,
+            origin:'right'
+        })
+        sr.reveal('#dp div',{
+            duration:1500
+        })
+        sr.reveal('#landing h2,h1',{
+            duration:1500
+        })
     </script>
 </body>
 </html>

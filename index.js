@@ -170,14 +170,12 @@ $(document).ready(function(){
         scrollFunction(e,700);
     })
     var winWidth = $(window).width();
-        console.log(winWidth)
-        $('.anime').mousemove(function(event) {
-            console.log('working')
-            var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
-            var moveY = (($(window).height() ) - event.pageY) * 0.1;
-            $('.anime_text').css('margin-left', moveX + 'px');
-            $('.anime_text').css('margin-top', moveY + 'px');
-        });
+    $('.anime').mousemove(function(event) {
+        var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+        var moveY = (($(window).height() ) - event.pageY) * 0.1;
+        $('.anime_text').css('margin-left', moveX + 'px');
+        $(  '.anime_text').css('margin-top', moveY + 'px');
+    });
 });
 var nav=function(){
     var x = document.getElementById("nav");

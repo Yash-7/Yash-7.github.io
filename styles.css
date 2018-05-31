@@ -120,10 +120,15 @@
 }
 #about h2{
     color: rgb(24, 24, 24);
+    font-family: 'Fjalla One',sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600
 }
 #about p{
-    color: rgb(0, 0, 0);
-    font-size: 17px
+    color: rgb(60, 60, 60);
+    font-size: 17px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 200;
 }
 i{
     position: fixed;
@@ -230,6 +235,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: ease 0.5s;
 }
 input[type=submit]:hover {
     background-color: rgb(231, 53, 17);
