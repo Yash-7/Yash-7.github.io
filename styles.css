@@ -262,7 +262,7 @@ input[type=submit]:hover {
     padding: 3vw 5vw;
 }
 #cric{
-    background: url('https://www.talkinglifestyle.com.au/wp-content/uploads/sites/17/2017/11/cricket.jpg');
+    background: url('./images/cricket');
     background-size: cover;
     -webkit-transition:0.5s; 
     transition: 0.5s;
@@ -274,7 +274,7 @@ input[type=submit]:hover {
     transition: 0.5s;
 }
 #vb{
-    background: url('http://globalmedicalco.com/photos/globalmedicalco/25/120425.jpg');
+    background: url('./images/volley.jpg');
     background-size: cover;
     -webkit-transition:0.5s; 
     transition: 0.5s;
