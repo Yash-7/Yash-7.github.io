@@ -90,7 +90,7 @@ $(document).ready(function(){
         classChange('ig');
     });
     $("#lin").click(function(){
-        window.open('https://www.linkedin.com/in/yashwanth-naik-26114011b/', '_blank')
+        window.open('https://www.linkedin.com/in/yashwanth-naik/', '_blank')
         return false;
     });
     $("#lin").hover(function(){
